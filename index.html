@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>El Poderoso Juego de Tetris</h1>
+    </header>
+    <div class="game-container">
+        <canvas id="tetris"></canvas>
+        <div class="score-board">
+            <p>Puntuación: <span id="score">0</span></p>
+            <p>Nivel: <span id="level">1</span></p>
+        </div>
+    </div>
+    <footer>
+        <p>© Derechos Reservados CAT</p>
+    </footer>
+    <div id="popup" class="popup hidden">
+        <p id="popup-message"></p>
+        <button onclick="restartGame()">Reiniciar Juego</button>
+    </div>
+    <script src="tetris.js"></script>
+</body>
+</html>
